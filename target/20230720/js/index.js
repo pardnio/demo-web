@@ -101,17 +101,17 @@
                             "fa-solid fa-angle-down"._fa,
                             ul._({ row: 5 }, [
                                 li._([
-                                    _a._("Magazine")._open("https://pardn.io/web-template/target/20230719")
+                                    _a._("Magazine")._open("https://demo-web.pardn.io/target/20230719/")
                                 ]),
                                 li._("Personal")._click(setHome),
                                 li._([
-                                    _a._("Personal Alt")._open("https://pardn.io/web-template/target/20230721")
+                                    _a._("Personal Alt")._open("https://demo-web.pardn.io/target/20230721/")
                                 ]),
                                 li._([
-                                    _a._("Classic")._open("https://pardn.io/web-template/target/20230722")
+                                    _a._("Classic")._open("https://demo-web.pardn.io/target/20230722/")
                                 ]),
                                 li._([
-                                    _a._("Minimal")._open("https://pardn.io/web-template/target/20230723")
+                                    _a._("Minimal")._open("https://demo-web.pardn.io/target/20230723/")
                                 ])
                             ])
                         ]),
@@ -159,17 +159,17 @@
                                 "fa-solid fa-angle-down"._fa,
                                 ul._({ row: 5 }, [
                                     li._([
-                                        _a._("Magazine")._open("https://pardn.io/web-template/target/20230719")
+                                        _a._("Magazine")._open("https://demo-web.pardn.io/target/20230719/")
                                     ]),
                                     li._("Personal")._click(setHome),
                                     li._([
-                                        _a._("Personal Alt")._open("https://pardn.io/web-template/target/20230721")
+                                        _a._("Personal Alt")._open("https://demo-web.pardn.io/target/20230721/")
                                     ]),
                                     li._([
-                                        _a._("Classic")._open("https://pardn.io/web-template/target/20230722")
+                                        _a._("Classic")._open("https://demo-web.pardn.io/target/20230722/")
                                     ]),
                                     li._([
-                                        _a._("Minimal")._open("https://pardn.io/web-template/target/20230723")
+                                        _a._("Minimal")._open("https://demo-web.pardn.io/target/20230723/")
                                     ])
                                 ])
                             ])._click(function () {
