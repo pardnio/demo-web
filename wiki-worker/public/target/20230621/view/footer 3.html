@@ -1,0 +1,33 @@
+<footer id="footer">
+    <section>
+        <p>© 2023 邱敬幃</p>
+        <ul>
+            <li :for="item in footer">
+                <a :href="item.href" target="_blank">
+                    <i :class="item.class"></i>
+                </a>
+            </li>
+        </ul>
+    </section>
+</footer>
+<script>
+    const footer = new PD({
+        id: "footer",
+        data: {
+            footer: [
+                {
+                    href: "https://github.com/pardnchiu",
+                    class: "fa-brands fa-github"
+                },
+                {
+                    href: "https://linkedin.com/in/pardnchiu",
+                    class: "fa-brands fa-linkedin-in"
+                },
+                {
+                    href: "mailto:dev@pardn.io",
+                    class: "fa-regular fa-envelope"
+                }
+            ]
+        }
+    });
+</script>

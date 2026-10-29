@@ -1,0 +1,16 @@
+name = "demo-web-wiki"
+main = "worker.js"
+compatibility_date = "2024-09-23"
+
+# preview URLs stay off so only the deployed site gets indexed; flip workers_dev
+# to false once a custom domain is attached, otherwise the site has no route
+workers_dev = true
+preview_urls = false
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = true
+
+[observability]
+enabled = false

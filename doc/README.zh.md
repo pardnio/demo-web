@@ -1,18 +1,17 @@
 > [!NOTE]
 > 此 README 由 [SKILL](https://github.com/agenvoy/skill-readme-generate) 生成，英文版請參閱 [這裡](../README.md)。
 
-***
+---
 
 <p align="center">
 <strong>38 HANDCRAFTED FRONTEND PAGES, ZERO BUILD STEP!</strong>
 </p>
 
 <p align="center">
-<a href="https://github.com/pardnio/demo-web/releases"><img src="https://img.shields.io/github/v/tag/pardnio/demo-web?include_prereleases&style=for-the-badge" alt="Version"></a>
 <a href="../LICENSE"><img src="https://img.shields.io/github/license/pardnio/demo-web?include_prereleases&style=for-the-badge" alt="License"></a>
 </p>
 
-***
+---
 
 > 純靜態 HTML 前端範例合輯，具備 38 個獨立頁面、SCSS 模組化原始碼與 PDRenderKit 實戰應用
 
@@ -59,6 +58,6 @@ Just [open an issue](https://github.com/pardnio/demo-web/issues/new) to share an
   <img src="https://contrib.rocks/image?repo=pardnio/demo-web&cache_bust=2026-10-04" alt="demo-web contributors" />
 </a>
 
-***
+---
 
 ©️ 2024 [邱敬幃 Pardn Chiu](https://www.linkedin.com/in/pardnchiu)

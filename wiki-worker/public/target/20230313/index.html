@@ -1,0 +1,501 @@
+<!-- 
+
+    Copyright 2024 Pardn Ltd 帕登國際有限公司.
+    Created by 邱敬幃 Pardn Chiu.
+    Email: dev@pardn.io
+
+-->
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="robots" content="index, follow">
+
+        <!-- SEO 標題與描述 -->
+        <title>網站前端範例 23-03-13 - 邱敬幃 Pardn Chiu</title>
+        <meta name="title" content="網站前端範例 23-03-13 - 邱敬幃 Pardn Chiu">
+        <meta name="description" content="網站前端範例 23-03-13 - 邱敬幃 Pardn Chiu">
+        <meta name="keywords" content="Website範例, 邱敬幃, Pardn Chiu">
+        <meta name="author" content="邱敬幃 Pardn Chiu">
+        <link rel="author" href="https://pardn.io">
+        <link rel="canonical" href="https://demo-web.pardn.io/target/20230313/">
+
+        <!-- Favicon -->
+        <link rel="icon" href="https://pardn.io/image/head.png" type="image/x-icon">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="網站前端範例 23-03-13 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="網站前端範例 23-03-13 - 邱敬幃 Pardn Chiu">
+        <meta property="og:image" content="https://demo-web.pardn.io/image/20230313.jpg">
+        <meta property="og:url" content="https://demo-web.pardn.io/target/20230313/">
+        <meta property="og:site_name" content="Pardn Chiu">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="zh_TW">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="網站前端範例 23-03-13 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="網站前端範例 23-03-13 - 邱敬幃 Pardn Chiu">
+        <meta property="twitter:image" content="https://demo-web.pardn.io/image/20230313.jpg">
+        <meta property="twitter:url" content="https://demo-web.pardn.io/target/20230313/">
+
+        <!-- Google Verification -->
+        <meta name="google-site-verification" content="YQQ2f6AchR8dcb55Az2BYd_mw4TrP0J1RApD-v2v65Y">
+
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5VYEZPVXX"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-L5VYEZPVXX');
+        </script>
+
+        <!-- Preload and Preconnect -->
+        <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" as="style">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/pdrenderkit@1.0.0/dist/PDRenderKit.js" as="script">
+        <script src="https://cdn.jsdelivr.net/npm/pdrenderkit@1.0.0/dist/PDRenderKit.js" copyright="Pardn Ltd"></script>
+
+        <!-- Local Resources -->
+        <link rel="stylesheet" href="./css/index.css">
+        <script src="./js/index.js" defer></script>
+
+        <!-- JSON-LD Schema -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "datePublished": "2023-03-13",
+            "dateModified": "2024-12-22",
+            "inLanguage": "zh-TW",
+            "name": {
+                "@language": "zh-TW",
+                "@value": "網站前端範例 23-03-13 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateName": {
+                "@language": "en",
+                "@value": "Web Example 23-03-13 - 邱敬幃 Pardn Chiu"
+            },
+            "description": {
+                "@language": "zh-TW",
+                "@value": "網站前端範例 23-03-13 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateDescription": {
+                "@language": "en",
+                "@value": "Web Example 23-03-13 - 邱敬幃 Pardn Chiu"
+            },
+            "url": "https://demo-web.pardn.io/target/20230313/",
+            "creator": {
+                "@type": "Person",
+                "name": [
+                    {
+                        "@language": "zh-TW",
+                        "@value": "邱敬幃"
+                    },
+                    {
+                        "@language": "en",
+                        "@value": "Pardn Chiu"
+                    }
+                ],
+                "url": "https://pardn.io/",
+                "sameAs": [
+                    "https://github.com/pardnchiu"
+                ],
+                "email": "dev@pardn.io"
+            },
+            "image": "https://demo-web.pardn.io/image/20230313.jpg"
+        }
+        </script>
+        <!--  -->
+        <style>
+            :root {
+                /* 頂部導覽列顏色 */
+                --col-nav: #fff;
+                /* 主色調 */
+                --col-system: #2d2d2d;
+                --col-system-light: #4200d011;
+                --col-txt: #7f7f7f;
+                --col-border: #e0e0e0;
+
+                --max-width: 1024px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <nav id="nav-002">
+            <div>
+                <div class="left">
+                    <a href="">
+                        <b>PARDN CHIU</b>
+                    </a>
+                </div>
+                <div class="right">
+                    <ul col="#6f6f6f">
+                        <li>
+                            <button>ITEM</button>
+                        </li>
+                        <li>
+                            <button>ITEM<i class="fas fa-angle-right right"></i></button>
+                        </li>
+                        <li>
+                            <button>ITEM<i class="fas fa-angle-right right"></i></button>
+                        </li>
+                        <li>
+                            <button>ITEM<i class="fas fa-angle-right right"></i>
+                            </button>
+                        </li>
+                    </ul>
+                    <a href="https://pardn.io/">
+                        <b>My Page</b>
+                        <i class="fa-solid fa-user right"></i>
+                    </a>
+                </div>
+                <button class="right">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <section header="2" top="14rem" bottom="10rem" bg-img="https://fakeimg.pl/1024/282828/eae0d0/?text=sample">
+            <div>
+                <div>
+                    <h1>網站前端範例 23-03-13</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim facilis tempore expedita vitae ullam vel animi officia porro magnam! Dolore eos voluptas suscipit porro odit ea nisi iure nihil molestias.
+                    <ul class="button">
+                        <li>
+                            <a class="bg" bg-col="--col-system" col="#fff" href="https://github.com/pardnchiu/web-template/" target="_blank">查看源碼<i class="fa-brands fa-github right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a bg-col="rgba(0, 0, 0, 0.5)" href="https://www.freepik.com/free-photo/asia-business-people-discussing-business-brainstorming-meeting-ideas-strategy-night-office_34428055.htm#query=team&position=20&from_view=search&track=sph" target="_blank" freepik="Image by our-team on Freepik"></a>
+        </section>
+
+        <section num="18" top="6rem" bottom="6rem">
+            <span mask="arc" col="#fff"></span>
+            <div>
+                <ul class="r3">
+                    <li class="shadow dark">
+                        <div>
+                            <a href="">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </a>
+                            <div>
+                                <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis asperiores eveniet deleniti!</p>
+                            </div>
+                            <div>
+                                <a href="" target="_blank">MORE</a>
+                                <i class="fas fa-arrow-right right"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="shadow dark">
+                        <div>
+                            <a href="">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </a>
+                            <div>
+                                <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis asperiores eveniet deleniti!</p>
+                            </div>
+                            <div>
+                                <a href="" target="_blank">MORE</a>
+                                <i class="fas fa-arrow-right right"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="shadow dark">
+                        <div>
+                            <a href="">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </a>
+                            <div>
+                                <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis asperiores eveniet deleniti!</p>
+                            </div>
+                            <div>
+                                <a href="" target="_blank">MORE</a>
+                                <i class="fas fa-arrow-right right"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="shadow dark">
+                        <div>
+                            <a href="">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </a>
+                            <div>
+                                <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis asperiores eveniet deleniti!</p>
+                            </div>
+                            <div>
+                                <a href="" target="_blank">MORE</a>
+                                <i class="fas fa-arrow-right right"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="shadow dark">
+                        <div>
+                            <a href="">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </a>
+                            <div>
+                                <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis asperiores eveniet deleniti!</p>
+                            </div>
+                            <div>
+                                <a href="" target="_blank">MORE</a>
+                                <i class="fas fa-arrow-right right"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="shadow dark">
+                        <div>
+                            <a href="">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </a>
+                            <div>
+                                <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis asperiores eveniet deleniti!</p>
+                            </div>
+                            <div>
+                                <a href="" target="_blank">MORE</a>
+                                <i class="fas fa-arrow-right right"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section num="19" bottom="6rem">
+            <div>
+                <div>
+                    <h6>Lorem ipsum dolor sit amet.</h6>
+                </div>
+                <ul>
+                    <li class="show">
+                        <button onclick="showContent(this)">Lorem ipsum dolor sit amet.<i class="fas fa-chevron-right"></i></button>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta perspiciatis nulla eveniet hic repellendus quas, placeat fugiat nostrum porro reprehenderit debitis sit amet optio quam ex quae minima natus corrupti?<br><br>
+                            <a href="" target="_blank" style="color: steelblue;">
+                                MORE
+                                <i class="fas fa-arrow-right right"></i>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="">
+                        <button onclick="showContent(this)">Lorem ipsum dolor sit amet.<i class="fas fa-chevron-right"></i></button>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ad ipsum, quam saepe quo optio minima, nam ex asperiores numquam autem delectus laborum, rerum ullam sapiente nulla animi earum eos.<br><br>
+                            <a href="https://joball.tw/album" target="_blank" style="color: steelblue;">
+                                MORE
+                                <i class="fas fa-arrow-right right"></i>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="">
+                        <button onclick="showContent(this)">Lorem ipsum dolor sit amet.<i class="fas fa-chevron-right"></i></button>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem commodi soluta pariatur nulla eligendi accusantium provident iure rem, in repellat fugiat qui animi unde impedit repellendus ea quam dolorum.<br><br>
+                            <a href="https://joball.tw/case" target="_blank" style="color: steelblue;">
+                                MORE
+                                <i class="fas fa-arrow-right right"></i>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="">
+                        <button onclick="showContent(this)">Lorem ipsum dolor sit amet.<i class="fas fa-chevron-right"></i></button>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, temporibus deleniti sint, aliquid id ut doloremque quibusdam ullam quia aliquam, nam corrupti quae consequuntur itaque sed asperiores laboriosam ratione recusandae.<br><br>
+                            <a href="https://joball.tw/post" target="_blank" style="color: steelblue;">
+                                MORE
+                                <i class="fas fa-arrow-right right"></i>
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                function showContent(e) {
+                    var isShow = e.parentElement.classList.contains('show');
+                    if (e.parentElement.parentElement.querySelector('li.show')) e.parentElement.parentElement.querySelector('li.show').classList.remove('show');
+                    isShow ? e.parentElement.classList.remove('show') : e.parentElement.classList.add('show');
+                };
+            </script>
+        </section>
+
+        <section top="10rem" bottom="14rem" bg-img="https://fakeimg.pl/1024/282828/eae0d0/?text=sample">
+            <div>
+                <div class="align-left">
+                    <h6 class="xl">準備好開始了嗎？</h6>
+                    <ul class="button align-left">
+                        <li><button class="bg" bg-col="--col-system" col="#fff">立即獲取 PD Web Pro</button></li>
+                    </ul>
+                </div>
+            </div>
+            <a bg-col="rgba(0, 0, 0, 0.5)"></a>
+        </section>
+
+        <section num="20" top="4rem" bottom="4rem">
+            <span mask="arc" col="#fff"></span>
+            <div>
+                <ul class="r2">
+                    <li style="text-align: left;">
+                        <img style="margin-bottom: 1rem; width: 128px; height 128px; border-radius: 50%;" src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path fill="#ffae00" d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path fill="#ffae00" d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path fill="#ffae00" d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path fill="#ffae00" d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path fill="#ffae00" d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path>
+                            </svg>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A itaque nam debitis numquam aut voluptatum maxime, unde id iusto molestiae distinctio eaque laboriosam, porro eveniet velit nihil reiciendis dolores animi!</p>
+                        <h6><b>Pardn Chiu</b>全端工程師</h6>
+                    </li>
+                    <li style="text-align: left;">
+                        <img style="margin-bottom: 1rem; width: 128px; height 128px; border-radius: 50%;" src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path fill="#ffae00" d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path fill="#ffae00" d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path fill="#ffae00" d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path fill="#ffae00" d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path fill="#ffae00" d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path>
+                            </svg>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam debitis cumque a. A, in praesentium? Debitis, sapiente. Eum ea iste ducimus, totam nisi quasi accusantium repellat ipsa mollitia dolore ex?</p>
+                        <h6><b>帕登國際有限公司</b>軟體公司</h6>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer num="1" top="4rem" style="border-top: 1px solid var(--col-border);">
+            <div>
+                <div>
+                    <h6>網站前端範例 23-03-13</h6>
+                    <p>Created by 邱敬幃 Pardn Chiu</p>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/pardnchiu" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/pardnchiu" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/chiuchingwei" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul>
+                    <li>
+                        <h6>ABOUT</h6>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/pardnchiu" target="_blank">Github</a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/chiuchingwei" target="_blank">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/pardnchiu" target="_blank">Instagram</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>PRODUCTS</h6>
+                        <ul>
+                            <li>
+                                <a href="">Landing Pages</a>
+                            </li>
+                            <li>
+                                <a href="">Inner Pages</a>
+                            </li>
+                            <li>
+                                <a href="">Header Examples</a>
+                            </li>
+                            <li>
+                                <a href="">Documentation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>TECHNICAL</h6>
+                        <ul>
+                            <li>
+                                <a href="">Changelog</a>
+                            </li>
+                            <li>
+                                <a href="">Theme Customizer</a>
+                            </li>
+                            <li>
+                                <a href="">Documentation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>LEGAL</h6>
+                        <ul>
+                            <li>
+                                <a href="">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="">Terms and Conditions</a>
+                            </li>
+                            <li>
+                                <a href="">License</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div>
+                    <p class="left">© 2023 邱敬幃</p>
+                    <p class="right">
+                        <a href="">Privacy Policy</a>
+                        ·
+                        <a href="">Contact</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+
+</html>

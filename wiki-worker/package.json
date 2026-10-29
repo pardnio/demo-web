@@ -1,0 +1,21 @@
+{
+  "name": "demo-web-wiki",
+  "private": true,
+  "scripts": {
+    "prebuild": "rm -rf public/target public/image && cp -R ../target ../image public/",
+    "build": "node build.js",
+    "sync-tags": "node sync-tags.js",
+    "sync-nanomd": "node sync-nanomd.js",
+    "dev": "npm run build && wrangler dev",
+    "deploy": "npm run build && node indexnow.js --ensure-key && wrangler deploy && node indexnow.js"
+  },
+  "dependencies": {
+    "@pardnchiu/nanomd": "2.0.10"
+  },
+  "devDependencies": {
+    "wrangler": "^4.107.0"
+  },
+  "allowScripts": {
+    "workerd@1.20261023.1": true
+  }
+}
