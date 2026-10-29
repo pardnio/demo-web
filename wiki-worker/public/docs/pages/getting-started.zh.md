@@ -14,7 +14,7 @@
 ## 取得原始碼
 
 ```bash
-git clone https://github.com/pardnio/demo-web.git
+git clone https://github.com/pardnchiu/demo-web.git
 cd demo-web
 ```
 

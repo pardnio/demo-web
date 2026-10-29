@@ -14,7 +14,7 @@ This page covers getting the source and previewing the landing page and any exam
 ## Get the Source
 
 ```bash
-git clone https://github.com/pardnio/demo-web.git
+git clone https://github.com/pardnchiu/demo-web.git
 cd demo-web
 ```
 

@@ -1,6 +1,9 @@
 > [!NOTE]
 > 此 README 由 [SKILL](https://github.com/agenvoy/skill-readme-generate) 生成，英文版請參閱 [這裡](../README.md)。
 
+> [!WARNING]
+> **已於 2026-10-30 封存。** demo-web 不再維護，38 款版型與線上展示維持現狀可用，但不再新增版型或修正，也不再受理 issue 與 pull request。
+
 ---
 
 <p align="center">
@@ -8,7 +11,7 @@
 </p>
 
 <p align="center">
-<a href="../LICENSE"><img src="https://img.shields.io/github/license/pardnio/demo-web?include_prereleases&style=for-the-badge" alt="License"></a>
+<a href="../LICENSE"><img src="https://img.shields.io/github/license/pardnchiu/demo-web?include_prereleases&style=for-the-badge" alt="License"></a>
 </p>
 
 ---
@@ -52,10 +55,10 @@ graph TB
 
 ## Author
 
-Just [open an issue](https://github.com/pardnio/demo-web/issues/new) to share an idea.
+Just [open an issue](https://github.com/pardnchiu/demo-web/issues/new) to share an idea.
 
-<a href="https://github.com/pardnio/demo-web/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=pardnio/demo-web&cache_bust=2026-10-04" alt="demo-web contributors" />
+<a href="https://github.com/pardnchiu/demo-web/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=pardnchiu/demo-web&cache_bust=2026-10-04" alt="demo-web contributors" />
 </a>
 
 ---

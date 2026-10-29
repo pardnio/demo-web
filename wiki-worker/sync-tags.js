@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 // === Filled in by wiki-generate when this template is copied into a project ===
-const REPO = "pardnio/demo-web"; // owner/repo
+const REPO = "pardnchiu/demo-web"; // owner/repo
 
 const TAGS_DIR = path.join(__dirname, "public/docs/tags");
 

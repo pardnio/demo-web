@@ -1,7 +1,7 @@
 {
   "home_title": {
-    "en": "38 Free Website Templates in HTML & SCSS - pardnio/demo-web",
-    "zh": "網頁設計｜38 款個人網站與一頁式網頁版型｜pardnio/demo-web"
+    "en": "38 Free Website Templates in HTML & SCSS | demo-web",
+    "zh": "網頁設計｜38 款個人網站與一頁式網頁版型｜demo-web"
   },
   "descriptions": {
     "en": {
@@ -44,7 +44,7 @@
       "example-20240625": "Crowdfunding platform mockup modeled on zeczec (嘖嘖), using QuickUI 0.6.2 :for loops: home, explore, project, FAQ, comments, proposal and auth pages.",
       "example-20241220": "Voice-controlled 7-segment smart clock (zh-TW Web Speech API) on QuickUI 0.6.2: shows time, date, year, seconds and runs spoken countdowns.",
       "frameworks": "Which frontend framework each demo-web example loads: PDExtension, PDRenderKit 1.0.0 to 1.5.2, or QuickUI 0.6.2.",
-      "getting-started": "Clone pardnio/demo-web and preview the landing page and any of the 38 HTML CSS examples locally with a static HTTP server.",
+      "getting-started": "Clone pardnchiu/demo-web and preview the landing page and any of the 38 HTML CSS examples locally with a static HTTP server.",
       "home": "38 free website templates in HTML and SCSS by Pardn Chiu (邱敬幃): portfolio, blog, business landing and app pages with compiled CSS, MIT licensed.",
       "project-structure": "How demo-web is laid out: date-named target/ example folders, preview images, and the README-driven landing page.",
       "styling-workflow": "Recompile each demo-web example from its SCSS entry file to the CSS it loads, with per-example entry and output file names."

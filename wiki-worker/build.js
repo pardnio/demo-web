@@ -6,9 +6,9 @@ const { Parse } = require("@pardnchiu/nanomd");
 const TEMPLATE_VERSION = "7.2.1"; // wiki-generate template version; see scripts/templates/CHANGELOG.md
 
 // === Site config — filled in by wiki-generate when this template is copied into a project ===
-const SITE_NAME = "pardnio/demo-web";
+const SITE_NAME = "demo-web";
 const DOMAIN = "https://demo-web.pardn.io";
-const REPO = "pardnio/demo-web"; // owner/repo
+const REPO = "pardnchiu/demo-web"; // owner/repo
 const AUTHOR_NAME = "邱敬幃 Pardn Chiu";
 const AUTHOR_URL = "https://pardn.io/";
 const AUTHOR_HANDLE = "pardnchiu";
